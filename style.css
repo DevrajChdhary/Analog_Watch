@@ -1,0 +1,45 @@
+/* The container for the clock */
+#clockContainer {
+    position: relative;
+    margin: auto;
+    background-color: red; /* Background color of the clock container */
+    height: 40vw;
+    width: 40vw;
+    background: url(Watch.png) no-repeat; /* Background image for the clock */
+    background-size: 100%; /* Make sure the background image covers the container */
+}
+
+/* Styling for the hour, minute, and second hands */
+#hour, #minute, #second {
+    position: absolute; /* Position these elements absolutely within the clock container */
+    background: black; /* Background color of the clock hands */
+    border-radius: 10px; /* Rounded corners for clock hands */
+    transform-origin: bottom; /* Set the rotation point to the bottom of the hands */
+}
+
+/* Styling for the hour hand */
+#hour {
+    width: 1.8%; /* Width of the hour hand */
+    height: 25%; /* Height of the hour hand */
+    top: 25%; /* Position from the top of the clock container */
+    left: 49.0%; /* Position from the left of the clock container */
+    opacity: 0.8; /* Opacity of the hour hand */
+}
+
+/* Styling for the minute hand */
+#minute {
+    width: 1.6%; /* Width of the minute hand */
+    height: 28%; /* Height of the minute hand */
+    top: 22%; /* Position from the top of the clock container */
+    left: 49.1%; /* Position from the left of the clock container */
+    opacity: 0.8; /* Opacity of the minute hand */
+}
+
+/* Styling for the second hand */
+#second {
+    width: 1%; /* Width of the second hand */
+    height: 34%; /* Height of the second hand */
+    top: 15%; /* Position from the top of the clock container */
+    left: 49.5%; /* Position from the left of the clock container */
+    opacity: 0.8; /* Opacity of the second hand */
+}
